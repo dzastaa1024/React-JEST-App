@@ -1,18 +1,15 @@
 import React from "react";
-import { mount, ReactWrapper } from "enzyme";
+import { mount } from "enzyme";
 import CommentBox from "../CommetBox";
-
-import { createStore } from "redux";
-import { Provider } from "react-redux";
-import reducers from "reducers";
+import Root from "../../Root";
 
 let wrapped;
 
 beforeEach(() => {
   wrapped = mount(
-    <Provider store={createStore(reducers, {})}>
+    <Root store={createStore(reducers, {})}>
       <CommentBox />
-    </Provider>
+    </Root>
   );
 });
 
