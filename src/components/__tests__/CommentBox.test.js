@@ -7,7 +7,7 @@ let wrapped;
 
 beforeEach(() => {
   wrapped = mount(
-    <Root store={createStore(reducers, {})}>
+    <Root>
       <CommentBox />
     </Root>
   );
