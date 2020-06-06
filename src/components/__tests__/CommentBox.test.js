@@ -18,9 +18,9 @@ afterEach(() => {
 });
 
 describe("the text area", () => {
-  it("has a text area and button", () => {
+  it("has a text area and button and two buttons", () => {
     expect(wrapped.find("textarea").length).toEqual(1);
-    expect(wrapped.find("button").length).toEqual(1);
+    expect(wrapped.find("button").length).toEqual(2);
   });
 
   it("has a text area that users can type in", () => {
